@@ -569,6 +569,61 @@
     @media (max-width: 768px) {
       .charts-grid { grid-template-columns: 1fr; }
     }
+
+    .kpi-section {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .kpi-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #e2e8f0;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .kpi-card {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-left: 5px solid;
+      border-radius: 14px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .kpi-emoji {
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .kpi-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #f1f5f9;
+      line-height: 1.3;
+    }
+
+    .kpi-meta {
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .kpi-freq {
+      font-size: 13px;
+      color: #64748b;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
@@ -787,6 +842,36 @@
               <div class="line2">Comunicación rápida para resolver bloqueos operativos.</div>
             </div>
           </article>
+        </div>
+
+        <div class="kpi-section">
+          <h3 class="kpi-title">📊 Indicadores de efectividad</h3>
+          <div class="kpi-grid">
+            <article class="kpi-card" style="border-left-color: #ef4444;">
+              <div class="kpi-emoji">📉</div>
+              <div class="kpi-name">Tasa de reclamos mensual</div>
+              <div class="kpi-meta">Reducir de 120 a menos de 30 reclamos/mes en 6 meses</div>
+              <div class="kpi-freq">Medición: mensual</div>
+            </article>
+            <article class="kpi-card" style="border-left-color: #a855f7;">
+              <div class="kpi-emoji">🎓</div>
+              <div class="kpi-name">Nivel de capacitación del equipo</div>
+              <div class="kpi-meta">100% del personal con las 5 sesiones completadas en 60 días</div>
+              <div class="kpi-freq">Medición: quincenal</div>
+            </article>
+            <article class="kpi-card" style="border-left-color: #facc15;">
+              <div class="kpi-emoji">✅</div>
+              <div class="kpi-name">Errores detectados antes de envío</div>
+              <div class="kpi-meta">Interceptar el 95% de errores antes de llegar al cliente</div>
+              <div class="kpi-freq">Medición: semanal</div>
+            </article>
+            <article class="kpi-card" style="border-left-color: #22c55e;">
+              <div class="kpi-emoji">😊</div>
+              <div class="kpi-name">Índice de satisfacción del equipo</div>
+              <div class="kpi-meta">Subir NPS interno de negativo a +40 en 3 meses</div>
+              <div class="kpi-freq">Medición: mensual</div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
